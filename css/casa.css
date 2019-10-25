@@ -44,6 +44,18 @@ main{
 
 
 
+.casa-dashboard p{
+    margin:0 !important;
+    padding:0 !important;
+}
+
+.casa-dashboard .row h2{
+    margin-top:1.5rem;
+}
+
+.casa-dashboard .row h3{
+    margin-top:0.5rem;
+}
 
 
 
@@ -166,7 +178,7 @@ a.cancel{
 
 .au-body p {max-width:100%!important;}
 .au-body--dark{background: #0080A2!important;}
-.au-header {padding:1.8rem 0!important}
+.au-header {padding:0 !important}
 .au-btn--secondary {background-color: #ffffff!important;}
 
 
