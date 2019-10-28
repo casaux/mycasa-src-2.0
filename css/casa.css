@@ -50,12 +50,58 @@ main{
 }
 
 .casa-dashboard .row h2{
-    margin-top:1.5rem;
+    margin:0.5rem 0 0.5rem 0;
 }
 
 .casa-dashboard .row h3{
-    margin-top:0.5rem;
+    margin:0.5rem 0 0rem 0;
 }
+
+.casa-dashboard h1{
+    margin-bottom:2rem;
+}
+
+
+.casa-profile{
+    margin-bottom:1rem;
+}
+
+
+.casa-profile div{
+    padding:1rem 0 1rem 0;
+    border-bottom: 3px solid #00bfe9;
+    position: relative;
+}
+
+.casa-profile-link.col-lg-6 ul{
+   
+}
+
+.casa-profile ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    float:right;
+}
+
+.casa-profile li{
+    display:inline;
+    padding-right:0.5rem;
+    
+}
+
+.casa-dashboard-row{
+    background: #f5f5f5;
+    margin-bottom: 1.5rem;
+}
+
+.casa-dashboard-item{
+    margin-bottom:1rem;
+}
+
+
+
+
 
 
 
