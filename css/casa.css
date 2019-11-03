@@ -67,21 +67,24 @@ main{
 }
 
 
-.casa-profile div{
+.casa-profile{
     padding:1rem 0 1rem 0;
     border-bottom: 3px solid #00bfe9;
     position: relative;
 }
 
-.casa-profile-link.col-lg-6 ul{
-   
+.casa-profile ul{
+    margin-left:0;
+    padding-left:0;
 }
 
-.casa-profile ul{
-    padding:0;
-    margin:0;
-    list-style:none;
-    float:right;
+@media (min-width: 1200px){
+   .col-lg-12-align-right{
+    text-align: right;
+    }
+    .col-lg-12-align-center{
+    text-align: center;
+    }
 }
 
 .casa-profile li{
@@ -91,7 +94,7 @@ main{
 }
 
 .casa-dashboard-row{
-    background: #f5f5f5;
+    background: #fafafa;
     margin-bottom: 1.5rem;
 }
 
