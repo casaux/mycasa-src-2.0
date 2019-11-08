@@ -336,6 +336,10 @@ a.cancel{
     color: #FFFFFF;
     background-color: #12b5ea;
 }
+.badge-suspended {
+    color: #FFFFFF;
+    background-color: #12b5ea;
+}
 .badge {
     display: inline-block;
     padding: .25em .4em;
