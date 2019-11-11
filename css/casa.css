@@ -52,6 +52,32 @@ main{
 }
 
 
+.date-entry{
+	margin-top:1rem;
+}
+
+.date-entry label{
+	font-size:.875rem;
+}
+
+.date-entry .date-day, .date-entry .date-month{
+	width:25%;
+	margin-right:2%;
+	float:left;
+}
+
+.date-entry .date-year{
+	width:46%;
+	float:left;
+}
+
+.date-guidance{
+	clear:both;
+	padding-top:0.85rem;
+	position:relative;
+	font-size:.875rem;
+}
+
 .footer{
 	background:#4C4C4C;
 	margin-top:120px;
@@ -165,6 +191,7 @@ main{
 .casa-profile-individual{
     border-bottom: 3px solid #00bfe9;
 }
+
 
 
 /* javascript classes */
