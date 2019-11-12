@@ -171,6 +171,31 @@ main{
     display:none;
 }
 
+/* specific design system overrides */
+.au-label{
+    font-weight:bold;
+}
+
+section.au-callout{
+    margin-bottom:2rem;
+}
+
+.casa-inline-form-subgroup{
+    float:left;
+    max-width:8rem;
+    margin-right:1rem;
+    margin-top:0 !important;
+}
+
+.casa-inline-form-group fieldset:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.au-body .au-form-group{
+    margin-top:2rem;
+}
 
 
 /* accessibiltiy theme overrides */
