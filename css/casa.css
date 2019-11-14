@@ -191,6 +191,42 @@ main{
     border-bottom: 3px solid #00bfe9;
 }
 
+/* status badges */
+
+.badge-warning {
+    color: #212529;
+    background-color: #ffc107;
+}
+.badge-expired {
+    color: #FFFFFF;
+    background-color: #BB0C0F;
+}
+.badge-in-progress {
+    color: #FFFFFF;
+    background-color: #12b5ea;
+}
+.badge-foreign {
+    color: #000000;
+    background-color: #F5F5F5;
+}
+.badge-rec {
+    color: #000000;
+}
+.badge-com {
+    color: #000000;
+}
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+
 
 
 /* javascript classes */
