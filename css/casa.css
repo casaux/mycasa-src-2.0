@@ -267,6 +267,23 @@ section.au-callout{
     margin-top:2rem;
 }
 
+/* device-specific media queries */
+
+.casa-desktop-only, .casa-mobile-only{
+	display:none;
+}
+
+@media (max-width: 991px) {
+  .casa-desktop-only{display: none;}
+	.casa-mobile-only{display:block;}
+}
+
+@media only screen and  (min-width: 1200px) {
+	.casa-desktop-only{display: block;}
+	.casa-mobile-only{display:none;}
+}
+
+
 
 /* accessibiltiy theme overrides */
 
