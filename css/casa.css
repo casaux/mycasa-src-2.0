@@ -267,6 +267,10 @@ section.au-callout{
     margin-top:2rem;
 }
 
+.au-body hr{
+	margin-top:4rem;
+}
+
 /* device-specific media queries */
 
 .casa-desktop-only, .casa-mobile-only{
