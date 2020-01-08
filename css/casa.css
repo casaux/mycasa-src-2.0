@@ -51,6 +51,12 @@ main{
     display:none;
 }
 
+.casa-sign-out{
+	display:block;
+	float:right;
+	margin-top:32px;
+}
+
 
 .date-entry{
 	margin-top:1rem;
