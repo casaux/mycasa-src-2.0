@@ -51,6 +51,12 @@ main{
     display:none;
 }
 
+.casa-sign-out{
+	display:block;
+	float:right;
+	margin-top:32px;
+}
+
 
 .date-entry{
 	margin-top:1rem;
@@ -270,6 +276,10 @@ section.au-callout{
 
 .au-body .au-form-group{
     margin-top:2rem;
+}
+
+.au-body hr{
+	margin-top:4rem;
 }
 
 /* device-specific media queries */
