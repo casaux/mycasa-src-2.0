@@ -303,7 +303,7 @@ main{
 
 
 /* javascript classes */
-.casa-hidden{
+.casa-hidden, .casa-errors{
     display:none;
 }
 
