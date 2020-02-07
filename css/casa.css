@@ -252,6 +252,24 @@ main{
     display:none;
 }
 
+.casa-sort-header{
+	font-weight:normal;
+	text-decoration:none !important;
+}
+
+.casa-sort-header-sorted-asc a, .casa-sort-header-sorted-desc a{
+	font-weight:bold;
+
+}
+
+.casa-sort-header-sorted-asc a::after{
+	content: " ▼";
+}
+
+.casa-sort-header-sorted-desc a::after{
+	content: " ▲";
+}
+
 /* specific design system overrides */
 .au-label{
     font-weight:bold;
