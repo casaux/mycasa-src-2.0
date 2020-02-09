@@ -128,9 +128,9 @@ main{
 }
 
 .casa-modal-inner{
-	margin: 1rem auto 0 auto; 
+	margin: 1rem auto 0 auto;
 	background: #FFF;
-	min-width: 320px; 
+	min-width: 320px;
 	max-width: 480px;
 	border-radius: 10px;
 }
@@ -311,19 +311,26 @@ main{
 	font-weight:normal;
 	text-decoration:none !important;
 }
-
+/*
 .casa-sort-header-sorted-asc a, .casa-sort-header-sorted-desc a{
 	font-weight:bold;
-	content: " &nbsp;";
 
+}
+*/
+
+.casa-sort-table a::after{
+content: " ▼";
+opacity:0;
 }
 
 .casa-sort-header-sorted-asc a::after{
 	content: " ▼";
+	opacity:1;
 }
 
 .casa-sort-header-sorted-desc a::after{
 	content: " ▲";
+	opacity:1;
 }
 
 /* specific design system overrides */
