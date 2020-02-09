@@ -314,6 +314,7 @@ main{
 
 .casa-sort-header-sorted-asc a, .casa-sort-header-sorted-desc a{
 	font-weight:bold;
+	content: " &nbsp;";
 
 }
 
