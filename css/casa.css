@@ -349,7 +349,13 @@ section.au-callout{
     margin-top:0 !important;
 }
 
-.casa-inline-form-group fieldset:after {
+.casa-inline-form-subgroup.casa-inline-form-subgroup-lg{
+	max-width:18rem !important;
+	width:18rem !important;
+	margin-top:1rem;
+}
+
+.casa-inline-form-subgroup-lg::after, .casa-inline-form-group fieldset:after, .au-form-group::after {
   content: "";
   display: table;
   clear: both;
@@ -358,6 +364,7 @@ section.au-callout{
 .au-body .au-form-group{
     margin-top:2rem;
 }
+
 
 .au-body hr{
 	margin-top:4rem;
