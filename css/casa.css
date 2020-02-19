@@ -361,6 +361,10 @@ section.au-callout{
   clear: both;
 }
 
+.casa-form-other-list{
+	margin-left:2.5rem;
+}
+
 .au-body .au-form-group{
     margin-top:2rem;
 }
