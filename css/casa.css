@@ -51,6 +51,12 @@ main{
     display:none;
 }
 
+.casa-sign-out{
+	display:block;
+	float:right;
+	margin-top:32px;
+}
+
 
 .date-entry{
 	margin-top:1rem;
@@ -97,6 +103,61 @@ main{
 	overflow:hidden;
 	width:100%;
 
+}
+
+
+.hidden{display: none!important;visibility: hidden;}
+
+#modal{
+	background:rgba(0,0,0,0.7);
+	width:100%;
+	height:100%;
+	position:fixed;
+	z-index:999999;
+	display:none;
+}
+
+/* modal */
+
+.casa-modal{
+	position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.5);z-index: 99999999;
+}
+
+.casa-modal-header, .casa-modal-footer, .casa-modal-body{
+	padding:1rem;
+}
+
+.casa-modal-inner{
+	margin: 1rem auto 0 auto;
+	background: #FFF;
+	min-width: 320px;
+	max-width: 480px;
+	border-radius: 10px;
+}
+
+.casa-modal-header{
+	border-bottom:1px solid #e5e5e5;
+	position: relative;
+}
+
+.casa-modal-close{
+	position:absolute;
+	top:1.2rem;
+	right:1.2rem;
+	width:20px;
+	height:20px;
+	background-image: url(../img/close.svg);
+	opacity:0.7;
+}
+
+.casa-modal-close span{
+	  visibility: hidden;
+}
+
+
+
+.casa-modal-footer{
+	border-top:1px solid #e5e5e5;
 }
 
 
@@ -148,7 +209,7 @@ main{
 .casa-profile li{
     display:inline;
     padding-right:0.5rem;
-    
+
 }
 
 .casa-dashboard-row{
@@ -162,13 +223,13 @@ main{
 
 .casa-section{
 	padding-bottom: 1.25rem;
-		
+
 }
 
 .casa-profiles{
     margin-top:3rem;
     clear:both;
-    
+
 }
 
 
@@ -184,7 +245,7 @@ main{
 
 .casa-profile-organisation, .casa-profile-select{
     border-bottom: 3px solid #f69900;
-    
+
 }
 
 .casa-profile-individual{
@@ -227,11 +288,49 @@ main{
     border-radius: .25rem;
 }
 
+.casa-lapsed {
+    font-style: italic;
+    color: #636363;
+}
+
+.casa-external{
+	background-repeat:no-repeat;
+	padding-right:20px;
+	background-position: top right;
+	background-image:
+	        url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='utf-8'?><!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 32 32' style='enable-background:new 0 0 32 32;' xml:space='preserve'><style type='text/css'>.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><path class='st0' d='M23,17.4c0-0.8,0.6-1.4,1.4-1.4c0.8,0,1.4,0.6,1.4,1.4v8.4c0,2.3-1.9,4.2-4.2,4.2H6.2C3.9,30,2,28.1,2,25.8	V10.4c0-2.3,1.9-4.2,4.2-4.2h8.4c0.8,0,1.4,0.6,1.4,1.4C16,8.4,15.4,9,14.6,9H6.2c-0.8,0-1.4,0.6-1.4,1.4v15.4	c0,0.8,0.6,1.4,1.4,1.4h15.4c0.8,0,1.4-0.6,1.4-1.4V17.4z'/><path class='st0' d='M27.2,4.8h-7c-0.8,0-1.4-0.6-1.4-1.4S19.4,2,20.2,2h8.4C29.3,2,30,2.7,30,3.4v8.4c0,0.8-0.6,1.4-1.4,1.4	c-0.8,0-1.4-0.6-1.4-1.4V4.8z'/><path class='st0' d='M14.2,19.8c-0.5,0.5-1.4,0.5-2,0c-0.5-0.5-0.5-1.4,0-2L27.6,2.4c0.5-0.5,1.4-0.5,2,0c0.5,0.5,0.5,1.4,0,2	L14.2,19.8z'/></g></svg>");
+}
 
 
 /* javascript classes */
-.casa-hidden{
+.casa-hidden, .casa-errors{
     display:none;
+}
+
+.casa-sort-header{
+	font-weight:normal;
+	text-decoration:none !important;
+}
+/*
+.casa-sort-header-sorted-asc a, .casa-sort-header-sorted-desc a{
+	font-weight:bold;
+
+}
+*/
+
+.casa-sort-table a::after{
+content: " ▼";
+opacity:0;
+}
+
+.casa-sort-header-sorted-asc a::after{
+	content: " ▼";
+	opacity:1;
+}
+
+.casa-sort-header-sorted-desc a::after{
+	content: " ▲";
+	opacity:1;
 }
 
 /* specific design system overrides */
@@ -252,15 +351,47 @@ section.au-callout{
     margin-top:0 !important;
 }
 
-.casa-inline-form-group fieldset:after {
+.casa-inline-form-subgroup.casa-inline-form-subgroup-lg{
+	max-width:18rem !important;
+	width:18rem !important;
+	margin-top:1rem;
+}
+
+.casa-inline-form-subgroup-lg::after, .casa-inline-form-group fieldset:after, .au-form-group::after {
   content: "";
   display: table;
   clear: both;
 }
 
+.casa-form-other-list{
+	margin-left:2.5rem;
+}
+
 .au-body .au-form-group{
     margin-top:2rem;
 }
+
+
+.au-body hr{
+	margin-top:4rem;
+}
+
+/* device-specific media queries */
+
+.casa-desktop-only, .casa-mobile-only{
+	display:none;
+}
+
+@media (max-width: 991px) {
+  .casa-desktop-only{display: none;}
+	.casa-mobile-only{display:block;}
+}
+
+@media only screen and  (min-width: 1200px) {
+	.casa-desktop-only{display: block;}
+	.casa-mobile-only{display:none;}
+}
+
 
 
 /* accessibiltiy theme overrides */
