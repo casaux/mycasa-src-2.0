@@ -242,7 +242,9 @@ main{
 section.au-callout{
     margin-bottom:2rem;
 }
-
+.au-callout.casa-declaration{
+	background: #E9E9E9;
+}
 .casa-inline-form-subgroup{
     float:left;
     max-width:8rem;
