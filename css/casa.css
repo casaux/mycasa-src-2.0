@@ -376,20 +376,23 @@ section.au-callout{
 	margin-top:4rem;
 }
 
-/* device-specific media queries */
+/* device-specific media queries
 
 .casa-desktop-only, .casa-mobile-only{
 	display:none;
-}
+} */
 
 @media (max-width: 991px) {
   .casa-desktop-only{display: none;}
 	.casa-mobile-only{display:block;}
+	td.casa-mobile-only{display:table-cell;}
 }
 
 @media only screen and  (min-width: 1200px) {
 	.casa-desktop-only{display: block;}
 	.casa-mobile-only{display:none;}
+	td.casa-desktop-only{display:table-cell;}
+
 }
 
 
