@@ -278,7 +278,7 @@ main{
     color: #000000;
 }
 .badge {
-    display: inline-block;
+    /*display: inline-block;*/
     padding: .25em .4em;
     font-size: 75%;
     font-weight: 700;
