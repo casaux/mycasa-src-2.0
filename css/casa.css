@@ -396,7 +396,9 @@ section.au-callout{
 
 }
 
+/*autocomplete*/
 
+.autocomplete-suggestions {border: 2px solid; background: #FFFFFF; overflow: auto;}
 
 /* accessibiltiy theme overrides */
 
