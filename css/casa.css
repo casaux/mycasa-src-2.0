@@ -396,10 +396,6 @@ section.au-callout{
 
 }
 
-/*autocomplete*/
-
-.autocomplete-suggestions {border: 2px solid; background: #FFFFFF; overflow: auto;}
-
 /* accessibiltiy theme overrides */
 
 .au-accordion--dark .au-body .au-accordion__title:focus,.au-accordion--dark .au-accordion__title:focus{outline-color:#FFE17D;}
