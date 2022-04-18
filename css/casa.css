@@ -274,6 +274,10 @@ main{
 .badge-rec {
     color: #000000;
 }
+.badge-update {
+    color: #000000;
+    background-color: #02bfe9;
+}
 .badge-com {
     color: #000000;
 }
